@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*
+        Selectores
+        * Universal (aplica para todos los elementos dentro de body)
+        */
+        *{
+            font-size:14pt;
+        }
+        /*etiqueta aplica para las etiquetas colocadas como selector
+        */
+        h2{ font-size:24pt; }
+        h3{ font-size:14pt; }
+        /*Selector de id precedido con #*/
+        #contEncabezado{ color:rgb(0,255,200); }
+        div{ color:rgb(9, 141, 112);}
+    </style>
 </head>
 <body>
-
+    <div id="contEncabezado">
+        <h1 style="font-size:3em;background-color:rgb(10, 37, 68);">
+        Ing. en Sistemas
+        </h1>
+        <h2>
+        Computacionales
+        </h2>
+        <h3>Transformamos la visión en realidad</h3>
+    </div>
     <ul>
         <li><a href="#datos_contacto">Datos de contacto</a></li>
         <li><a href="#objetivos">Objetivos educacionales</a></li>
@@ -15,13 +39,6 @@
         <li><a href="">Atributos de egreso</a></li>
     </ul>
 
-    <h1>
-    Ing. en Sistemas
-    </h1>
-    <h1>
-    Computacionales
-    </h1>
-    <h1>Transformamos la visión en realidad</h1>
     <!--table>tr>td*4-->
     <a href="" id="datos_contacto">Datos de contacto</a>
     <table>

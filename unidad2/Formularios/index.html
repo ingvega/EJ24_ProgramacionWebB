@@ -7,19 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="" autocomplete="off">
         <div>
             <!--Etiquetas-->
             <label for="txtNombre">Nombre</label>
             <!--Cajas de texto-->
-            <input type="text" id="txtNombre" 
+            <input type="text" id="txtNombre" name="txtNombre" 
                 placeholder="Ingresa tu nombre completo"
-                minlength="2" maxlength="50" required>
+                minlength="2" maxlength="50" autofocus required>
         </div>
         <div>
             <label for="txtEmail">Correo</label>
             <!--Cajas de texto-->
-            <input type="email" id="txtEmail" 
+            <input type="email"  id="txtEmail" name="txtEmail" 
                 placeholder="correo@dominio.com"
                 required>
         </div>
@@ -34,17 +34,24 @@
             <input type="number" id="txtSemestre" 
             min="1" max="13" value="1" required>
         </div>
+        <div>
+            <label for="txtTelefono">Telefono</label>
+            <input type="text" pattern="[0-9]{10}" id="txtTelefono" 
+             required>
+        </div>
     <!--Botones de opción-->
     <div>
         Género
         <label>
-            <input type="radio" name="genero" checked> Masculino
+            <input type="radio" name="genero" value="Masculino" checked> Masculino
         </label>
         <br>
         <label>
-            <input type="radio" name="genero"> Femenino
+            <input type="radio" name="genero" value="Femenino"> Femenino
         </label>
     </div>
+    <button>Enviar</button>
+    <input type="submit" value="Enviar">
     <!--Listas desplegables-->
     <!--Grupo de controles-->
     
@@ -53,5 +60,48 @@
     <!--Cajas de texto amplias-->
     <!--Selector de archivo-->
     </form>
+
+    <table border>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Nombre</th>
+                <th>Diámetro(km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="4">Planetas terrestres</th>
+                <th>Mercurio</th>
+                <td>4,879</td>
+            </tr>
+            <tr>
+                <th>Venus</th>
+                <td>12,104</td>
+            </tr>
+            <tr>
+                <th>Tierra</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Marte</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    &nbsp;
+                    <!--La etiqueta &lt;td&gt; se usa para indicar una celda en la fila -->
+                    <!--<br>-->
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
 </body>
 </html>

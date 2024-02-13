@@ -1,0 +1,16 @@
+*{
+    font-size:14pt;
+    margin:0;
+    padding:0;
+}
+/*etiqueta aplica para las etiquetas colocadas como selector
+*/
+h2{ font-size:24pt; }
+h3{ font-size:14pt; }
+/*Selector de id precedido con #*/
+#contEncabezado{ 
+    color:rgb(0,255,200); 
+    background-color: rgb(33, 30, 30);
+    padding:50px;
+}
+div{ color:rgb(9, 141, 112);}

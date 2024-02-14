@@ -1,7 +1,8 @@
 *{
-    font-size:14pt;
+    /*font-size:14pt;*/
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 /*etiqueta aplica para las etiquetas colocadas como selector
 */
@@ -14,3 +15,23 @@ h3{ font-size:14pt; }
     padding:50px;
 }
 div{ color:rgb(9, 141, 112);}
+
+#secciones{
+    font-size: 0;
+    text-align: center;
+}
+
+#secciones li{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 20%;
+}
+
+#secciones li a{
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    /*width: 190px;*/
+    
+}

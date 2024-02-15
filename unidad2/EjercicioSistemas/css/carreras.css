@@ -35,3 +35,14 @@ div{ color:rgb(9, 141, 112);}
     /*width: 190px;*/
     
 }
+#contenido{
+    height: 100vh;
+    width: calc(100vw - 14px);
+    background: lightblue;
+}
+#contenido div{
+    border: 1px solid black;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}

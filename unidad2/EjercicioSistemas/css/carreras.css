@@ -11,8 +11,13 @@ h3{ font-size:14pt; }
 /*Selector de id precedido con #*/
 #contEncabezado{ 
     color:rgb(0,255,200); 
-    background-color: rgb(33, 30, 30);
+    background-color: rgb(207, 19, 19);
+    background-image: url(../imgs/banner.jpg);
+    background-size: cover;/*100vw 40vh; cover;*/
+    background-repeat: no-repeat;
+    background-position: fixed;
     padding:50px;
+    height: 80vh;
 }
 div{ color:rgb(9, 141, 112);}
 
@@ -36,13 +41,17 @@ div{ color:rgb(9, 141, 112);}
     
 }
 #contenido{
-    height: 100vh;
-    width: calc(100vw - 14px);
+    /*height: 100vh;*/
+    /*width: calc(100vw - 14px);*/
+    width:100%;
     background: lightblue;
+    display: flex;
+    flex-wrap: wrap; /*Permite que se respete el ancho de los hijos y que 
+    los dibuje en tantas líneas como se requiera*/
 }
 #contenido div{
     border: 1px solid black;
-    display: inline-block;
+    /*display: inline-block;*/
     width: 50%;
-    height: 50%;
+    height: 50vh;
 }

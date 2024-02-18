@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#algo {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#algo div{
+    border: 1px solid sandybrown;
+    height: 100px;
+}
+
+#algo .u40{
+width: 40%;
+}
+/*Selector con pseudo elementos precedidos por dos puntos (:)
+primer hijo y el ultimo hijo*/
+#algo  > div:first-child, #algo > div:last-child {
+width: 100%;
+}
+
+#algo div:nth-child(3){
+    width: 20%;
+    }
+
+#algo div:nth-child(5){
+    width: 60%;
+    }
+/*2n colorea cada segundo bloque como numeros pares
+con 2n+1 colorea numeros impares*/
+#algo div:nth-child(2n+1){
+    background-color: black;
+    }

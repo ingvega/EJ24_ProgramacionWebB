@@ -1,37 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #algo {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-#algo div{
+#algo div {
     border: 1px solid sandybrown;
     height: 100px;
 }
 
-#algo .u40{
-width: 40%;
+#algo .u40 {
+    width: 40%;
 }
+
 /*Selector con pseudo elementos precedidos por dos puntos (:)
 primer hijo y el ultimo hijo*/
-#algo  > div:first-child, #algo > div:last-child {
-width: 100%;
+#algo>div:first-child,
+#algo>div:last-child {
+    width: 100%;
 }
 
-#algo div:nth-child(3){
+#algo div:nth-child(3) {
     width: 20%;
-    }
+}
 
-#algo div:nth-child(5){
+#algo div:nth-child(5) {
     width: 60%;
-    }
+}
+
 /*2n colorea cada segundo bloque como numeros pares
 con 2n+1 colorea numeros impares*/
-#algo div:nth-child(2n+1){
+#algo > div:nth-child(2n+1) {
     background-color: black;
-    }
+}
+
+.logo {
+width: 10%;
+background-color: red;
+}
+
+.der{
+    width: 60%;
+    background-color: blue;
+    /* margin-left: auto; */
+    margin: 0 auto;
+}
+
+#menu{
+    display: flex;
+    /* justify-content: space-between; */
+
+}

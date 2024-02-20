@@ -15,7 +15,7 @@
     height: 100px;
 }
 
-#algo .u40 {
+.u40 {
     width: 40%;
 }
 
@@ -26,11 +26,11 @@ primer hijo y el ultimo hijo*/
     width: 100%;
 }
 
-#algo div:nth-child(3) {
+#algo > div:nth-child(3) {
     width: 20%;
 }
 
-#algo div:nth-child(5) {
+#algo > div:nth-child(5) {
     width: 60%;
 }
 
@@ -40,20 +40,25 @@ con 2n+1 colorea numeros impares*/
     background-color: black;
 }
 
+#menu{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
 .logo {
 width: 10%;
 background-color: red;
 }
 
+
 .der{
     width: 60%;
     background-color: blue;
-    /* margin-left: auto; */
-    margin: 0 auto;
+    margin-left: auto;
+    /*margin: 0 auto;*/
+    display: flex;
 }
 
-#menu{
-    display: flex;
-    /* justify-content: space-between; */
-
+.u15{
+    width: 15%;
 }

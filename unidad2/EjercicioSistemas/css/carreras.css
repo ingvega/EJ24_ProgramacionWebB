@@ -54,4 +54,53 @@ div{ color:rgb(9, 141, 112);}
     /*display: inline-block;*/
     width: 50%;
     height: 50vh;
+    border-radius: 25%;
+    overflow:hidden
 }
+
+#contacto{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+ #contacto > div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 50%;
+ }
+ #contacto div div{
+    padding:15px;
+ }
+/*
+ #contenido img{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+ }*/
+
+
+
+ #objetivos div{
+    background-image: url(../imgs/objetivos.jpg);
+    background-size: cover;
+    width: 50vh;
+    height: 50vh;
+    background-position: center;
+    border-radius: 50%; 
+    /* border-radius: 25% 50% 10% 5%; */
+    /*border-top-right-radius: 22px;*/
+ }
+
+ #principal div{
+    background-image: url(../imgs/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+ }
+
+ 

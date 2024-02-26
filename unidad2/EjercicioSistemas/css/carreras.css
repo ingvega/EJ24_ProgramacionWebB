@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     /*font-size:14pt;*/
     margin:0;
     padding:0;
     box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
 }
 /*etiqueta aplica para las etiquetas colocadas como selector
 */
@@ -10,14 +17,20 @@ h2{ font-size:24pt; }
 h3{ font-size:14pt; }
 /*Selector de id precedido con #*/
 #contEncabezado{ 
-    color:rgb(0,255,200); 
+    color:#fff; 
     background-color: rgb(207, 19, 19);
     background-image: url(../imgs/banner.jpg);
     background-size: cover;/*100vw 40vh; cover;*/
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position: center;
+    background-attachment: fixed;
     padding:50px;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    /*text-shadow: 3px 3px 5px #000000d8;*/
 }
 div{ color:rgb(9, 141, 112);}
 

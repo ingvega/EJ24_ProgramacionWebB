@@ -75,17 +75,25 @@ div{ color:rgb(9, 141, 112);}
     display: flex;
     width: 95%;
     margin: 0 auto;
-    
+    border-radius: 5px;
+    background: #ddd;
+    /*font-size: 14px;*/
 }
  #contacto > div{
+    /*font-size: 1.5rem;*/
     width: 25%;
     display: flex;
     align-items: center;
-    background: #ddd;
-    border-radius: 50%;
+    
+    /*border-radius: 50%;*/
  }
  #contacto div div{
+    /*font-size: 1.5rem;*/
     padding:15px;
+ }
+
+ #contacto span{
+    font-size: 2.5rem;
  }
 /*
  #contenido img{

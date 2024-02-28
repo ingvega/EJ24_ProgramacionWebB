@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
+
 <body>
     <form action="" autocomplete="off">
-        <div>
-            <!--Etiquetas-->
+        <div class="col-12">
             <label for="txtNombre">Nombre</label>
-            <!--Cajas de texto-->
-            <input type="text" id="txtNombre" name="txtNombre" 
-                placeholder="Ingresa tu nombre completo"
-                minlength="2" maxlength="50" autofocus required>
+            <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingresa tu nombre completo" minlength="2"
+                maxlength="50" autofocus required>
         </div>
-        <div>
+        <div class="col-8">
             <label for="txtEmail">Correo</label>
-            <!--Cajas de texto-->
-            <input type="email"  id="txtEmail" name="txtEmail" 
-                placeholder="correo@dominio.com"
-                required>
+            <input type="email" id="txtEmail" name="txtEmail" placeholder="correo@dominio.com" required>
         </div>
-        <div>
+        <div class="col-4">
             <label for="txtFecha">Fecha de nacimiento</label>
             <!--Cajas de texto-->
-            <input type="date" id="txtFecha" 
-                required><!-- disabled readonly>-->
+            <input type="date" id="txtFecha" required><!-- disabled readonly>-->
         </div>
-        <div>
+
+        <div class="col-6">
             <label for="txtSemestre">Semestre</label>
-            <input type="number" id="txtSemestre" 
-            min="1" max="13" value="1" required>
+            <input type="number" id="txtSemestre" min="1" max="13" value="1" required>
         </div>
-        <div>
+        <div class="col-6">
             <label for="txtTelefono">Telefono</label>
-            <input type="text" pattern="[0-9]{10}" id="txtTelefono" 
-             required>
+            <input type="text" pattern="[0-9]{10}" id="txtTelefono" required>
         </div>
-    <!--Botones de opción-->
-    <div>
-        Género
-        <label>
-            <input type="radio" name="genero" value="Masculino" checked> Masculino
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="genero" value="Femenino"> Femenino
-        </label>
-    </div>
-    <button>Enviar</button>
-    <input type="submit" value="Enviar">
-    <!--Listas desplegables-->
-    <!--Grupo de controles-->
-    
-    <!--Casillas de verificación-->
-    <!--Botones-->
-    <!--Cajas de texto amplias-->
-    <!--Selector de archivo-->
+        <!--Botones de opción-->
+        <div class="col-6">
+            Género
+            <label>
+                <input type="radio" name="genero" value="Masculino" checked> Masculino
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="genero" value="Femenino"> Femenino
+            </label>
+        </div>
+        <div class="col-12">
+            <button>Enviar</button>
+            <input type="submit" value="Enviar">
+        </div>
+        <!--Listas desplegables-->
+        <!--Grupo de controles-->
+
+        <!--Casillas de verificación-->
+        <!--Botones-->
+        <!--Cajas de texto amplias-->
+        <!--Selector de archivo-->
     </form>
 
     <table border>
@@ -102,6 +99,7 @@
             </tr>
         </tbody>
     </table>
-    
+
 </body>
+
 </html>

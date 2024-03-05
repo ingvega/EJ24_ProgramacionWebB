@@ -66,6 +66,11 @@ input:not([type=checkbox],[type=radio]){
     border: none;
     border-bottom: 5px solid rgb(6, 132, 113);
     outline: none;
+    border-bottom-width: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 3rem;
+    background-position: center right;
     /*outline: 1px solid red;
     outline-offset: 5px;*/
 }
@@ -80,4 +85,16 @@ input:not([type=checkbox],[type=radio]):hover{
 
 input[type=checkbox] + label{
     display: inline;
+}
+
+.validado input:not([type=checkbox],[type=radio]):valid{
+    border: 1px solid rgb(29, 181, 5);
+    background-image: url(../imgs/check.png);
+    border-bottom-width: 5px;
+}
+
+.validado input:not([type=checkbox],[type=radio]):invalid{
+    border: 1px solid rgb(186, 12, 12);
+    background-image: url(../imgs/x.png);
+    border-bottom-width: 5px;
 }

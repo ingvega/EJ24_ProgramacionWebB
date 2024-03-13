@@ -1,0 +1,12 @@
+:root{
+    --fondo:#d87093;
+}
+.bg-pink{
+    background-color:var(--fondo);
+}
+
+nav .form-control{
+    border-radius: 0;
+    border:none;
+    border-bottom: 5px solid rgb(162, 30, 74);
+}

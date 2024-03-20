@@ -11,9 +11,11 @@
         <input type="text" id="txtNum1" placeholder="Ingresa un número">
         <input type="text" id="txtNum2" placeholder="Ingresa otro número" value="0">
         <div id="resultado"></div>
-        <button type="button" id="btnSumar" onclick="sumar()">
+        <button type="button" onclick="/*console.log(this);*/sumar(this)">
             Sumar</button>
-        <button type="button">Restar</button>
+        <button type="button" id="btnRestar">Restar</button>
+        <button type="button" id="btnMultiplicar">Multiplicar</button>
+        <button type="button" id="btnDividir">Dividir</button>
     </form>
     <script src="js/operaciones.js"></script>
 </body>

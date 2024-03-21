@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <form>
-        <input type="text" id="txtNum1" placeholder="Ingresa un número">
-        <input type="text" id="txtNum2" placeholder="Ingresa otro número" value="0">
+        <input type="text" id="txtNum1" placeholder="Ingresa un número" required>
+        <input type="text" id="txtNum2" placeholder="Ingresa otro número" value="0" required>
         <select id="cboOperacion">
             <option value="">Selecciona la operación</option>
             <option value="+">Suma</option>
@@ -17,7 +18,7 @@
             <option value="*">Multiplicación</option>
             <option value="/">División</option>
         </select>
-        <button type="button" id="btnCalcular">Calcular</button>
+        <button type="submit" id="btnCalcular">Calcular</button>
     </form>
     <table id="tblHistorial">
         <thead>

@@ -1,0 +1,10 @@
+input,select{
+    outline: 0;
+}
+form.validado input:valid,form.validado select:valid{
+    border: 1px solid green;
+}
+
+form.validado input:invalid, form.validado select:invalid{
+    border: 1px solid red;
+}
